@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  /*HOME*/
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+      url("./public/img/4Vhvgs.jpg") center/cover no-repeat;
+  }
+  
+  .banner {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner-heading {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  
+  .banner-paragraph {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  
+  #navbar {
+    background-color: rgba(56, 84, 106, 0.3);
+  }
+  
+  #navbar a {
+    color: #ededed;
+    font-size: 20px;
+  }
+  
+  .nav-center {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  .navbar-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .logo {
+    color: #ffff;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+  }
+  
+  #navbar a:hover {
+    color: #050505;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .nav-item--spaced {
+    margin-right: 30px;
+  }
+  
+  .nav-item--spaced:last-child {
+    margin-right: 0;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+  
+  
+  .fade-in.visible {
+    opacity: 1;
+  }
+  
+  .btn-signup {
+    margin-right: 10px;
+  }
+  
+  /*FIM HOME*/
+  
+  /* SEÇÃO ABT US */
+  .about-us {
+    color: #333;
+    background-color: #f8f9fa; 
+  }
+  
+  .about-us h2,
+  .about-us h3 {
+    font-family: "Josefin Sans", sans-serif;
+    color: #17a2b8; 
+  }
+  
+  .about-us p,
+  .about-us li {
+    color: #6c757d; /
+  }
+  
+  .fa-ul > li {
+    margin-bottom: 10px;
+  }
+  
+  .checked {
+    color: #dc7b00;
+  }
+  
+  .row {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #b85d1c; 
+    margin-bottom: 0.5rem; 
+    font-weight: bold; 
+  }
+  
+  .title-underline {
+    width: 200px;
+    height: 1px; 
+    background-color: #b85d1c; 
+    margin-bottom: 1rem; 
+  }
+  .small-title-underline {
+    width: 100px; 
+    height: 1px;
+    background-color: #b85d1c; 
+    margin-bottom: 1rem; 
+  }
+  
+  .pousada-name {
+    font-size: 3rem; 
+    color: #17a2b8; 
+    font-weight: lighter;
+  }
+  
+  .about-us .underline {
+    width: 50px;
+    height: 4px;
+    background-color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .image-container {
+    perspective: 1000px; 
+  }
+  
+  .about-image {
+    width: 100%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out; 
+  }
+  
+  .about-image:hover {
+    transform: rotateY(10deg) translateX(10px); 
+  }
+  
+  #map-container {
+    margin-top: 20px;
+    text-align: center; 
+  }
+  
+  /* FIM SEÇÃO abt us */
+  
+  /* INICIO SEÇÃO ROOMS */
+  .room-section {
+    background-color: #ebf6f7;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  /* Estilos para as imagens dos quartos */
+  .room-section .card-img-top {
+    height: 400px; 
+    width: 100%; 
+    object-fit: cover; 
+  }
+  
+  .btn-editar-reserva {
+    padding: 0.25rem 0.5rem; 
+    font-size: 0.875rem; 
+    line-height: 1.5;
+    border-radius: 0.2rem; 
+  }
+  
+  .btn-excluir-reserva {
+    margin-left: 1px;
+    padding: 0.25rem 0.5rem; 
+    font-size: 0.875rem;
+    line-height: 1.5; 
+    border-radius: 0.2rem; 
+  }
+  
+  .price {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .card-title {
+    color: #333; 
+  }
+  
+  .card-text {
+    color: #555; 
+  }
+  
+  .btn-primary {
+    background-color: #17a2b8; 
+    border: none; 
+  }
+  
+  .btn-primary:hover {
+    background-color: #135a7d; 
+  }
+  
+  .teste {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* fim da seção 3 room*/
+  
+  footer {
+    background: #f8f9fa;
+    color: #6c757d;
+  }
