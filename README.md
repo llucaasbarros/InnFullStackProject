@@ -1,6 +1,6 @@
 Fullstack Project
 
-This is a fullstack project that uses HTML, CSS, and JavaScript for the frontend, and Node.js with JWT for authentication and SQL for the database in the backend.
+This is a fullstack project that uses HTML, CSS, BootStrap and JavaScript for the frontend, and Node.js with JWT for authentication and SQL for the database in the backend.
 Features
 
     JWT Authentication: User login and registration with JWT tokens.
